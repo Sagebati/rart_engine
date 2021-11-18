@@ -80,7 +80,7 @@ fn main() {
                                 .flatten()
                                 .unwrap();
                             for rarity in &config.rarities {
-                                if name.contains(&rarity.suffix) {
+                                if name.contains(&format!("_{}",&rarity.suffix)) {
                                     return (x, config.default_rarity / rarity.factor as f64);
                                 }
                             }
