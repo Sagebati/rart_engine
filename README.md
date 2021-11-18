@@ -19,7 +19,7 @@ Then:
 
 with the cargo or the binary* :
 
-`cargo run --release -n 1000`
+`cargo run --release -- -n 1000`
 
 or 
 
