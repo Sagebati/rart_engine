@@ -29,7 +29,7 @@ struct Layer {
 
 #[derive(Deserialize)]
 struct Rarity {
-    prefix: String,
+    suffix: String,
     factor: f64,
 }
 
@@ -79,7 +79,7 @@ fn main() {
                             .flatten()
                             .unwrap();
                         for rarity in &config.rarities {
-                            if name.contains(&rarity.prefix) {
+                            if name.contains(&rarity.suffix) {
                                 return (x, config.default_rarity / rarity.factor as f64);
                             }
                         }
