@@ -17,8 +17,8 @@ layers = [
 # Defines the rarity, defined by how many it's rare than the default, so if sr is 100 more rare than default,
 # the probabilities are calculated dynamically.
 rarities = [
-    { suffix = "r", factor = 20.0},
-    {suffix = "sr", factor = 100.0}
+    { suffix = "_r", factor = 20.0},
+    {suffix = "_sr", factor = 100.0}
 ]
 
 
