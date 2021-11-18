@@ -1,0 +1,28 @@
+output = "output"
+default_rarity = 100.0
+
+layers = [
+    {folder = "background", prob = 1},
+    {folder = "contour", prob = 1},
+    {folder = "couleur", prob = 1},
+    {folder = "couleur 2", prob = 1},
+    {folder = "oreille rose", prob = 0.5},
+    {folder = "yeux", prob = 1},
+    {folder = "taches", prob = 1},
+    {folder = "bouche,nez", prob = 1},
+    {folder = "lunettes", prob = 0.5},
+    {folder = "chapeau", prob = 0.1},
+]
+
+# Defines the rarity, defined by how many it's rare than the default, so if sr is 100 more rare than default,
+# the probabilities are calculated dynamically.
+rarities = [
+    {prefix = "r", factor = 20.0},
+    {prefix = "sr", factor = 100.0}
+]
+
+
+[dims]
+height = 3001
+width = 2736
+

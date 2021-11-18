@@ -1,0 +1,15 @@
+[package]
+name = "merger"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+toml="0.5.8"
+serde = {version = "1.0.130", features = ["default", "derive"] }
+rand ="0.8.4"
+walkdir = "2.3.2"
+image = "0.23.14"
+rayon = "1.5.1"
+clap = "3.0.0-beta.5"
